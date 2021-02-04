@@ -1,0 +1,8 @@
+<h2> Product Details </h2>
+
+<div *ngIf="product">
+  <h3> {{ product.name }} </h3>
+  <h4> {{ product.price | currency }} </h4> <!-- | currency : Makes the value to show in currency style, Angular Pipes-->
+  <p>  {{ product.description }} </p>
+  <button (click)="addToCart()">Buy</button>
+</div>
